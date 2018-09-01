@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+          "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <title>FYP</title>
+
+    <link rel='stylesheet' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/cupertino/jquery-ui.css'>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js'></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/jquery-ui.js'></script>
+    <script src='scripts/strophe.js'></script>
+    <script src='scripts/flXHR.js'></script>
+     <link rel="stylesheet" href="style.css">
+       <link rel="stylesheet" href="stylee.css">
+ <!--<script src='scripts/strophe.flxhr.js'></script>-->
+   
+    <link rel='stylesheet' href='gab.css'>
+    <script src='gab.js'></script>
+
+     
+
+  </head>
+  <body>
+    <h1>Cross Domain Communication</h1>
+
+
+    <section id ="login1" class="container">
+    <div  class="login">
+      <h1>Login</h1>
+      
+    
+        <p>JID:<input type="text" name="login" id="jid" value="" placeholder="JID"></p>
+    
+        <p>Password:<input type="password" name="password" id="password"  placeholder="Password"></p>
+        <p class="submit"><input type="submit" onclick="connectfunction()" ></p>
+      
+    </div>
+
+   
+  </section>
+
+
+
+
+
+
+
+    <!--<div id='login'>
+      <label>JID:</label><input type='text' id='jid'>
+      <label>Password:</label><input type='password' id='password'>
+      <button onclick="connectfunction()">Connect</button>
+    </div>-->
+
+    <section id='toolbar' class='hidden'>
+<a  class="button" id='new-contact'>Add contact...</a>
+<a class="button" id='new-chat'>Chat with...</a>
+<a  class="button" id='disconnect'>Disconnect</a>
+<a class="button" id='duallogin'>Duallogin</a>
+</section>
+   <!--<div id='toolbar' class='hidden'>
+      <a class='button' id='new-contact'>add contact...</a> ||
+      <a class='button' id='new-chat'>chat with...</a> ||
+      <a class='button' id='disconnect'>disconnect</a> ||
+	  <a class='button' id='duallogin'>duallogin</a>
+    </div>-->
+
+   <!-- <div id="header">
+    </div>-->
+    <div id='chat-area' class='hidden'>
+      <ul></ul>
+    </div>
+    
+    <div id='roster-area' class='hidden'>
+      <!--<ul></ul>-->
+
+      <section> <!--for demo wrap--> 
+<div  class="tbl-header">
+<table >
+  <thead>
+    <tr>
+      <th>FRIENDS</th>
+     </tr>
+  </thead>
+</table>
+</div>
+<div  id="tablebody" class="tbl-content">
+<table cellpadding="0" cellspacing="0" border="0">
+  <tbody>
+    
+   
+    </tbody>
+</table>
+</div>
+</section>
+
+
+
+
+
+
+    </div>
+	<div id='roster-area2' class='hidden'>
+	  <ul></ul>
+	</div>
+
+	<div id='login_dialog_2' class='hidden'>
+      <label>JID2:</label><input type='text' id='jid2'>
+      <label>Password2:</label><input type='password' id='password2'>
+    </div>
+    
+    <div id='contact_dialog' class='hidden'>
+      <label>JID:</label><input type='text' id='contact-jid'>
+      <label>Name:</label><input type='text' id='contact-name'>
+    </div>
+
+   
+    <div id='chat_dialog' class='hidden'>
+      <label>JID:</label><input type='text' id='chat-jid'>
+    </div>
+
+    
+    <div id='approve_dialog' class='hidden'>
+      <p><span id='approve-jid'></span> has requested a subscription
+        to your presence.  Approve or deny?</p>
+    </div>
+  
+  </body>
+</html>                                                                                               
